@@ -1,0 +1,12 @@
+
+{% extends "reservas/base.html" %}
+
+{% block title %}{{ espacio.nombre }}{% endblock %}
+
+{% block content %}
+<h1>{{ espacio.nombre }}</h1>
+
+<p>Tipo: {{ espacio.tipo }} Aforo: {{ espacio.aforo }}</p>
+
+<a href="{% url 'reservas:lista' %}">Volver</a>
+{% endblock %}
